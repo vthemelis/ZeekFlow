@@ -1,8 +1,8 @@
 # Step 1
-Dataset description at [CIC-IDS2017](https://www.unb.ca/cic/datasets/ids-2017.html)
+Dataset description at [CIRA-CIC-DoHBrw-2020](https://www.unb.ca/cic/datasets/dohbrw-2020.html)
 
 
-Download dataset from [dataset](http://205.174.165.80/CICDataset/CIC-IDS-2017/Dataset/PCAPs/)
+Download dataset from [dataset](http://205.174.165.80/CICDataset/DoHBrw-2020/Dataset/)
 
 # Step 2 (Generate Netflow logs)
 ### Sample command for reading pcap file and filtering packets based on parameters (e.g., IP)
@@ -34,3 +34,5 @@ zeek -r <pcap>
 Execute notebook *merge_CIC-IDS2017_day.ipynb*
 
 **P.S be careful with the exact directories for pcap, csv, log and nfcapd files around the dataset directories.**
+
+**P.S #2 for ZeekFlow we utilized: Malicious (MaliciousDoH-dns2tcp-Pcap-001_600:) and Benign (Google pcap: dump_00001_20200113100617.pcap, Cloudflare pcap:dump_00001_20200113152847.pcap, Quad9: dump_00001_20200111222621.pcap)**

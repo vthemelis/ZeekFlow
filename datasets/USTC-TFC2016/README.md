@@ -1,8 +1,10 @@
 # Step 1
-Dataset description at [CIC-IDS2017](https://www.unb.ca/cic/datasets/ids-2017.html)
 
+Download dataset from GitHub
 
-Download dataset from [dataset](http://205.174.165.80/CICDataset/CIC-IDS-2017/Dataset/PCAPs/)
+``` 
+git clone https://github.com/yungshenglu/USTC-TFC2016.git
+```
 
 # Step 2 (Generate Netflow logs)
 ### Sample command for reading pcap file and filtering packets based on parameters (e.g., IP)
@@ -31,6 +33,6 @@ zeek -r <pcap>
 
 # Step 4 Merge Zeek and Netflow logs
 
-Execute notebook *merge_CIC-IDS2017_day.ipynb*
+Execute notebook *merge_USTC-TFC2016.ipynb*
 
 **P.S be careful with the exact directories for pcap, csv, log and nfcapd files around the dataset directories.**
